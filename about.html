@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>About</title>
-<link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: Title Tag -->
+  <title>About Us · Mphele's Bakery Makhado</title>
+
+  <!-- SEO: Meta Description -->
+  <meta name="description" content="Learn about Mphele's Bakery – a family-run bakery in Makhado Mall built on passion, quality, and community.">
+
+  <!-- SEO: Keywords -->
+  <meta name="keywords" content="about Mphele's Bakery, family bakery, Makhado, Limpopo, bakery history, mission">
+
+  <!-- SEO: Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:title" content="About Mphele's Bakery">
+  <meta property="og:description" content="A family-run bakery in Makhado built on passion for quality baked goods.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<nav>
-
+  <!-- Header -->
+  <header>
     <h2><i class="fa-solid fa-bread-slice"></i> Mphele's Bakery</h2>
+    <nav>
       <ul class="navbar">
         <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="about.html"><i class="fa fa-users"></i> About</a></li>
@@ -19,36 +38,60 @@
         <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
         <li><a href="enquiry.html"><i class="fa fa-cart-shopping"></i> Booking</a></li>
       </ul>
-</nav>
+    </nav>
+  </header>
 
-<section>
+  <!-- About Section -->
+  <section class="fade-in">
+    <h1><i class="fa-solid fa-users"></i> About Us</h1>
 
-<h1><i class="fa-solid fa-users"></i> About Us</h1>
+    <p>
+      Mphele's Bakery started as a small home business and has grown into a well-known
+      bakery in Makhado Mall.
+    </p>
 
-<p>
-Mphele's Bakery started as a small home business and has grown into a well-known
-bakery in Makhado Mall.
-</p>
+    <p>
+      Our bakery is built on strong family values and a passion for baking. Every recipe
+      is carefully prepared to ensure quality and great taste.
+    </p>
 
-<p>
-Our bakery is built on strong family values and a passion for baking. Every recipe
-is carefully prepared to ensure quality and great taste.
-</p>
+    <p>
+      We aim to create a welcoming environment where every customer feels valued.
+    </p>
 
-<p>
-We aim to create a welcoming environment where every customer feels valued.
-</p>
+    <!-- Tabs: Mission & Vision (Interactive Element) -->
+    <div class="tabs slide-up">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="mission">
+          <i class="fa-solid fa-heart"></i> Our Mission
+        </button>
+        <button class="tab-btn" data-tab="vision">
+          <i class="fa-solid fa-eye"></i> Our Vision
+        </button>
+        <button class="tab-btn" data-tab="values">
+          <i class="fa-solid fa-star"></i> Our Values
+        </button>
+      </div>
 
-<h2><i class="fa-solid fa-heart"></i> Our Mission</h2>
-<p>To deliver fresh and delicious baked goods daily.</p>
+      <div class="tab-content active" id="mission">
+        <p>To deliver fresh and delicious baked goods daily, using quality ingredients and heartfelt care in every product.</p>
+      </div>
 
-<h2><i class="fa-solid fa-eye"></i> Our Vision</h2>
-<p>To become a leading bakery known for quality and service.</p>
+      <div class="tab-content" id="vision">
+        <p>To become a leading bakery known for quality, service, and community impact across Limpopo.</p>
+      </div>
 
-</section>
+      <div class="tab-content" id="values">
+        <p>We value freshness, family, community, and consistency — bringing the same care to every loaf and every customer.</p>
+      </div>
+    </div>
+  </section>
 
-<footer>
+  <footer>
     <p>Mphele's Bakery | 2025</p>
-</footer>
+  </footer>
+
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/animations.js"></script>
 </body>
 </html>
