@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mphele's Bakery · Home</title>
-<link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- SEO: Title Tag -->
+  <title>Mphele's Bakery · Fresh Bread, Cakes & Pastries in Makhado</title>
+
+  <!-- SEO: Meta Description -->
+  <meta name="description" content="Mphele's Bakery offers freshly baked bread, custom cakes, muffins, and cookies daily at Makhado Mall. Order online or visit us today.">
+
+  <!-- SEO: Keywords -->
+  <meta name="keywords" content="bakery, Makhado, fresh bread, custom cakes, muffins, cookies, Mphele's Bakery, Limpopo">
+
+  <!-- SEO: Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:title" content="Mphele's Bakery · Fresh Baked Goods in Makhado">
+  <meta property="og:description" content="Freshly baked bread, cakes, and pastries made daily at Makhado Mall.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-
+  <!-- Header -->
+  <header>
     <h2><i class="fa-solid fa-bread-slice"></i> Mphele's Bakery</h2>
-<!--headers-->
     <nav>
       <ul class="navbar">
         <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
@@ -23,40 +39,94 @@
         <li><a href="enquiry.html"><i class="fa fa-cart-shopping"></i> Booking</a></li>
       </ul>
     </nav>
+  </header>
 
-<section>
-
+  <!-- Hero Section -->
+  <section class="hero fade-in">
     <h1><i class="fa-solid fa-store"></i> Welcome to Mphele's Bakery</h1>
-
     <p>Freshly baked goods made daily in Makhado Mall.</p>
-
     <p>
-        At Mphele's Bakery, we believe that every product tells a story. From selecting
-        ingredients to the final product, we ensure quality and care in every step.
+      At Mphele's Bakery, we believe that every product tells a story. From selecting
+      ingredients to the final product, we ensure quality and care in every step.
     </p>
-
     <p>
-        Our team wakes up early every day to prepare fresh bread, cakes, and pastries
-        so that customers always enjoy the best quality.
+      Our team wakes up early every day to prepare fresh bread, cakes, and pastries
+      so that customers always enjoy the best quality.
     </p>
-
     <p>
-        We aim to provide not just food, but a complete experience filled with warmth,
-        freshness, and satisfaction.
+      We aim to provide not just food, but a complete experience filled with warmth,
+      freshness, and satisfaction.
     </p>
+  </section>
 
+  <!-- What We Offer – with Accordion (Interactive Element) -->
+  <section class="offers-section slide-up">
     <h2><i class="fa-solid fa-star"></i> What We Offer</h2>
-    <ul>
-        <li><i class="fa-solid fa-bread-slice"></i> Fresh bread</li>
-        <li><i class="fa-solid fa-cake-candles"></i> Custom cakes</li>
-        <li><i class="fa-solid fa-cookie"></i> Cookies</li>
-        <li><i class="fa-solid fa-mug-hot"></i> Muffins</li>
-    </ul>
-</section>
 
-<footer>
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <i class="fa-solid fa-bread-slice"></i> Fresh Bread
+          <i class="fa-solid fa-chevron-down acc-icon"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Artisan loaves, bran bread, rye bread and more — baked fresh every morning.</p>
+          <a href="service.html">View bread →</a>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <i class="fa-solid fa-cake-candles"></i> Custom Cakes
+          <i class="fa-solid fa-chevron-down acc-icon"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Birthday cakes, wedding cakes, kids cakes — made to order for any occasion.</p>
+          <a href="service.html">View cakes →</a>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <i class="fa-solid fa-cookie"></i> Cookies
+          <i class="fa-solid fa-chevron-down acc-icon"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Crunchy, sweet butter cookies and seasonal flavours available daily.</p>
+          <a href="service.html">View cookies →</a>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <i class="fa-solid fa-mug-hot"></i> Muffins
+          <i class="fa-solid fa-chevron-down acc-icon"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Blueberry, chocolate chip, and more — soft muffins baked fresh each day.</p>
+          <a href="service.html">View muffins →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dynamic: Featured Products loaded by JavaScript -->
+  <section class="featured-section slide-up">
+    <h2><i class="fa-solid fa-fire"></i> Today's Specials</h2>
+    <div id="featured-products" class="product-cards">
+      <!-- Dynamically populated by JavaScript -->
+    </div>
+  </section>
+
+  <footer>
     <p>Mphele's Bakery | 2025</p>
-</footer>
+  </footer>
 
+  <script src="assets/js/accordion.js"></script>
+  <script src="assets/js/featured.js"></script>
+  <script src="assets/js/animations.js"></script>
 </body>
 </html>
+
